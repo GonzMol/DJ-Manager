@@ -1,0 +1,30 @@
+.container {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    border: solid;
+    border-radius: 10px;
+    border-width: 10px;
+    border-color: black;
+    background-color: var(--sky-blue);
+    gap: 30px;
+}
+
+.active {
+    z-index: 2;
+}
+
+.inactive {
+    z-index: -2;
+}

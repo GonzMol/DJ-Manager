@@ -1,0 +1,68 @@
+.addSong {
+    flex: none;
+    width: 100px;
+    align-self: flex-end;
+    background-color: var(--sky-blue);
+    color: var(--navy-blue);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 20px 0;
+}
+
+.editDetails {
+    flex: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: var(--sky-blue);
+    color: var(--navy-blue);
+    font-size: 18px;
+    font-weight: 600;
+    align-self: flex-end;
+    margin-bottom: 15px;
+}
+
+.addAlbum {
+    flex: none;
+    height: 60px;
+    width: 150px;
+    background-color: var(--sky-blue);
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 12px;
+}
+
+.deleteAlbum {
+    background-color: var(--error);
+    border-color: black;
+}
+
+.deleteAlbum:active {
+    filter: brightness(80%);
+}
+
+.defaultSettings {
+    cursor: pointer;
+    border: none;
+    transition: filter .1s, transform .2s;
+}
+
+.defaultSettings:hover {
+    filter: brightness(110%);
+    transform: scale(115%);
+}
+
+.defaultSettings:active {
+    filter: brightness(120%);
+    transform: scale(110%);
+}
+
+.deleteAlbum:active {
+    filter: brightness(90%);
+}

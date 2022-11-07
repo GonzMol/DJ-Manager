@@ -1,0 +1,64 @@
+.what {
+    font-size: 24px;
+}
+
+.itemContainer {
+    margin: 0px 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+}
+
+.itemContainer .name {
+    flex: none;
+    width: 150px;
+    color: var(--navy-blue);
+    font-size: 24px;
+}
+
+.itemContainer .items {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.items div {
+    flex: none;
+    background-color: var(--navy-blue);
+    color: var(--sky-blue);
+    font-size: 18px;
+    height: 20px;
+    font-weight: 400;
+    padding: 10px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color .2s, color .2s, filter .1s;
+}
+
+.items div:hover {
+    background-color: var(--error);
+    color: var(--navy-blue);
+}
+
+.items div:active:hover {
+    filter: brightness(85%);
+}
+
+.items::-webkit-scrollbar {
+    width: 10px;
+}
+
+.items::-webkit-scrollbar-track {
+    background-color: #aad6ed;
+    border-radius: 5px;
+    filter: brightness(0%);
+}
+
+.items::-webkit-scrollbar-thumb {
+    background-color: var(--navy-blue);
+    border-radius: 5px;
+}

@@ -1,0 +1,112 @@
+.container {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 30px 100px 0px 100px;
+    padding-bottom: 50px;
+}
+
+.title {
+    flex: none;
+    font-size: 48px;
+    color: var(--sky-blue);
+    margin-bottom: 20px;
+}
+
+.contents {
+    flex: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    margin-left: 30px;
+}
+
+.songContainer {
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--dark-blue);
+    border-radius: 18px;
+    margin-top: 30px;
+    align-self: flex-start;
+    gap: 20px;
+}
+
+.detailsContainer {
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    align-self: flex-start;
+}
+
+.detailsContainer button {
+    flex: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: var(--sky-blue);
+    color: var(--navy-blue);
+    font-size: 18px;
+    font-weight: 600;
+    align-self: flex-end;
+    margin-bottom: 15px;
+}
+
+.delete-btn {
+    flex: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: var(--sky-blue);
+    color: var(--navy-blue);
+    font-size: 18px;
+    font-weight: 600;
+    align-self: flex-end;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color .2s, transform .2s, filter .1s;
+}
+
+
+.delete-btn:hover {
+    transform: scale(115%);
+    background-color: var(--error);
+}
+
+.delete-btn:active {
+    transform: scale(105%);
+    filter: brightness(90%);
+    background-color: var(--error);
+}
+
+.loading,.error {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading,.error div {
+    font-size: 48px;
+    flex: none;
+    text-align: center;
+    font-weight: 600;
+}
+
+.loading div {
+    color: var(--sky-blue);
+}
+
+.error div {
+    color: var(--error);
+}

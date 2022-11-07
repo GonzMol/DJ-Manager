@@ -1,0 +1,31 @@
+.gridTitle {
+    margin-left: 40px;
+}
+
+.searchBar {
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--navy-blue);
+    border: solid;
+    border-width: 0px;
+    border-radius: 12px;
+    padding: 2px;
+    width: 20%;
+    transition: width .3s, filter .1s;
+    text-indent: 10px;
+}
+
+.searchBar:hover {
+    filter: brightness(110%);
+    width: 40%;
+}
+
+.searchBar:focus {
+    filter: brightness(120%);
+    outline: none;
+    width: 40%;
+    padding: 0px;
+    border-width: 2px;
+    border-color: white;
+}

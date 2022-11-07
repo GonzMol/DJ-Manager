@@ -1,0 +1,57 @@
+.itemGrid {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 210px;
+}
+
+.itemGrid a {
+    flex: none;
+    width: 83%;
+    height: 83%;
+    background-color: var(--sky-blue);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width .3s, height .3s, filter .1s, font-size .3s, color .1s;
+    font-size: 24px;
+    color: var(--navy-blue);
+    padding: 3px;
+    border: solid;
+    border-width: 0px;
+}
+
+.itemGrid a:hover {
+    width: 98%;
+    height: 98%;
+    filter: brightness(110%);
+    font-size: 28px;
+    color: black;
+}
+
+.itemGrid a:active {
+    width: 95%;
+    height: 95%;
+    filter: brightness(120%);
+    font-size: 27.2px;
+    color: black;
+    border-color: white;
+    border-width: 3px;
+    padding: 0px;
+}
+
+.itemGrid div {
+    flex: none;
+    width: 90%;
+    
+    text-align: center;
+}
+
+.itemGrid p {
+    color: var(--sky-blue);
+    text-align: center;
+    font: 24px;
+}

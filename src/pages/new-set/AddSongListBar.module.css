@@ -1,0 +1,37 @@
+.container-container {
+    margin: 40px auto;
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 400px;
+    margin-right: 20px;
+    text-align: center;
+    color: var(--navy-blue);
+}
+
+.search-button {
+    width: 80px;
+    height: 55px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy-blue);
+    padding: 0.5rem;
+    text-align: center;
+    background-color: var(--sky-blue);
+    align-self: flex-start;
+}
+
+.cover {
+    top: -1px;
+    width: 5px;
+    height: 10px;
+    position: relative;
+    background-color: var(--navy-blue);
+    z-index: 1;
+}

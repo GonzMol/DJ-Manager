@@ -1,0 +1,61 @@
+.container {
+    padding-top: 30px;
+    width: 600px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.popupEntry {
+    flex: none;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 30px;
+    gap: 0px;
+    align-items: center;
+}
+
+.popupEntry div {
+    align-self: center;
+    flex: none;
+    width: 150px;
+    color: var(--navy-blue);
+    font-size: 24px;
+}
+
+.popupEntry input {
+    flex: 1;
+    background-color: var(--navy-blue);
+    color: var(--sky-blue);
+    font-size: 24px;
+    height: 36px;
+    padding: 2px;
+    border: solid;
+    border-width: 0px;
+    transition: background-color .1s, filter .1s;
+}
+
+.popupEntry input:hover {
+    background-color: var(--dark-blue);
+}
+
+.popupEntry input:focus {
+    filter: brightness(110%);
+    background-color: var(--dark-blue);
+    padding: 0px;
+    border-color: white;
+    border-width: 2px;
+    outline: none;
+}
+
+.popupEntry button {
+    align-self: flex-start;
+    background-color: var(--navy-blue);
+    margin-right: 30px;
+    font-size: 20px;
+    color: var(--sky-blue);
+    width: 120px;
+    border-radius: 12px;
+}

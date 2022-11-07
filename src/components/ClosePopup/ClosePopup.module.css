@@ -1,0 +1,18 @@
+.container {
+    flex: none;
+    align-self: stretch;
+    display: flex;
+    margin: auto 30px 30px 30px;
+    justify-content: space-around;
+}
+
+.container .button {
+    flex: none;
+    background-color: var(--navy-blue);
+    color: var(--sky-blue);
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 30px;
+    font-weight: 700px;
+}

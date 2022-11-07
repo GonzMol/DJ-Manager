@@ -1,0 +1,15 @@
+.addItem {
+    height: 45px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: var(--sky-blue);
+    color: var(--navy-blue);
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.linkItem {
+    flex: none;
+    margin: 20px 10% 0px 85%;
+}

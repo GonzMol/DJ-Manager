@@ -1,0 +1,43 @@
+.song {
+    flex: none;
+    background-color: var(--sky-blue);
+    padding-left: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    border-radius: 8px;
+    cursor: text;
+    transition: background-color .2s;
+}
+
+.song:hover {
+    background-color: var(--sky-blue);
+}
+
+.song:hover.hasCross {
+    background-color: var(--sky-blue);
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-self: stretch;
+}
+
+.container p {
+    font-size: 24px;
+    color: var(--navy-blue);
+    margin: 0;
+}
+
+.cross {
+    flex: none;
+    width: 18px;
+    height: 24px;
+    font-size: 19px;
+    color: var(--navy-blue);
+    font-weight: 1000;
+    cursor: pointer;
+    pointer-events: auto;
+}

@@ -1,0 +1,58 @@
+/*
+Dark Navy Blue: #00152A
+Light Pink: #CEB4B4
+Black: #000 (think it is default)
+Place our universal colors as global variables.
+*/
+
+:root {
+    --navy-blue: #00152A;
+    --dark-blue: #0b243f;
+    --sky-blue: #73B0D2;
+    --error: #ff0033;
+    --success: #198754;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--navy-blue);
+    color: var(--sky-blue);
+    height: 100vh;
+    font-family: "Helvetica Neue", "Helvetica", "Arial";
+    font-weight: 550;
+}
+
+button {
+    transition: transform 0.2s;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    transform: scale(110%);
+}
+
+button:active {
+    transform: scale(105%);
+}
+
+
+
+/* These are for removing hyperlink coloring */
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}

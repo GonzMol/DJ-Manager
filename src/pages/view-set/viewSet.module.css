@@ -1,0 +1,101 @@
+.container {
+    margin-top: 70px;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 100px;
+    padding-bottom: 50px;
+}
+
+.title {
+    flex: none;
+    font-size: 32px;
+    color: var(--sky-blue);
+    margin-bottom: 50px;
+}
+
+.contents {
+    flex: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    margin-left: 30px;
+}
+
+.edit {
+    flex: none;
+    height: 60px;
+    width: 100px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 24px;
+    background-color: var(--sky-blue);
+    align-self: flex-end;
+    transition: filter .1s transform .2s;
+}
+
+.edit:hover {
+    filter: brightness(110%);
+}
+
+.songContainer {
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--dark-blue);
+    border-radius: 18px;
+    margin-top: 30px;
+    align-self: flex-start;
+    gap: 20px;
+}
+
+.loading,.error {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading,.error div {
+    font-size: 48px;
+    flex: none;
+    text-align: center;
+    font-weight: 600;
+}
+
+.loading div {
+    color: var(--sky-blue);
+}
+
+.error div {
+    color: var(--error);
+}
+
+.delete-btn {
+    flex: none;
+    background-color: var(--sky-blue);
+    color: var(--navy-blue);
+    align-self: flex-end;
+    cursor: pointer;
+    transition: background-color .2s, transform .2s, filter .1s;
+}
+
+
+.delete-btn:hover {
+    transform: scale(110%);
+    background-color: var(--error);
+}
+
+.delete-btn:active {
+    transform: scale(105%);
+    filter: brightness(90%);
+    background-color: var(--error);
+}
